@@ -11,7 +11,7 @@ function UserData({ user }) {
           <p>{login}</p>
           <p>Public repos {public_repos}</p>
           <a href={`https://github.com/${login}`}>{name || login}</a>
-          <p>{login} Joined on {" "}
+          <p>{name} Joined on {" "}
               {`${createdDate.getDate()} ${createdDate.toLocaleString("en-us", {
                   month:"short",
               })}`} {createdDate.getFullYear()}
